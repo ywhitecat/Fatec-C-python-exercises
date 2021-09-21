@@ -1,3 +1,5 @@
+
+#include <ctype.h>
 #include <stdio.h>
 #include <math.h>
 /* André Cavalcante de Lima
@@ -14,7 +16,7 @@ void main(){
     scanf("%s",&sexo);
 
   
-    while((toupper(sexo) != 'f') && (toupper(sexo) != 'm')){
+    while((toupper(sexo) != 'F') && (toupper(sexo) != 'M')){
         printf("\napenas F ou M e resposta valida \n Digite novamente o seu sexo: ");
         scanf("%s",&sexo);
 
