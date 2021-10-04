@@ -12,16 +12,23 @@
 int main(int argc, char const *argv[])
 {
     int x=1;
+    printf("Pressione enter para a primeira tabuada\n");
     while (1){
+        getch();
     for(int i=1; i<=10; i++){
         printf("%i x %i = %i \n",i,x,x*i);
 
     }
-    printf("\n Pressione enter para a proxima tabuada\n\n");
-    getch();
+    if (x>=20){ //perfumaria
+        printf("\n");
+    }
+    else{
+        printf("\n Pressione enter para a proxima tabuada\n\n");
+
+    }
     x++;
     if (x ==21){
-        printf("Somente ate a tabuada do 20\n Obrigado por usar\n");
+        printf("Somente ate a tabuada do 20 meu bem\n Obrigado por usar\n");
         break;
     }
     }

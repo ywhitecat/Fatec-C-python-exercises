@@ -4,12 +4,19 @@ A série: 1, 1, 2, 3, 5, 8, ...
 
 */
 
-int main(int argc, char const *argv[])
+int main()
 {
-    for(int i=0;i<=30;i++){
-        int sum = i-1;
-        int ans = sum+i;
-        printf("%i",ans);
-    }
-    return 0;
+      int a=0, b=1,sum=0;
+
+      printf("sequencia dos 30 primeiro do fibonacci e: \n1\n");
+  
+      for(int i=0 ; i<30 ; i++){  
+        sum=a + b;
+        a=b;
+        b=sum;       
+                
+     printf("%i\n",sum);
+      }  
+    
+   return 0;
 }

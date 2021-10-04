@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     printf("Digite um numero inteiro positivo: ");
     scanf("%i", &x);
 
-    while(x<0){
+    while(x<=0){
     printf("Somente numero postivos\n Digite novamente: ");
     scanf("%i", &x);
 
