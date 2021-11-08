@@ -12,7 +12,7 @@ void main(){
     scanf("%i",&a);
     printf("\nDigite o segundo valor inteiro: ");
     scanf("%i",&b);
-while (a>b){
+while (a>=b){
     printf("O segundo deve ser maior que o primeiro ! \n Digite novamente o segundo valor: ");
     scanf("%i",&b);
 }
