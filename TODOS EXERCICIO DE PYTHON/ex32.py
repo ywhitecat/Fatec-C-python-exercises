@@ -18,5 +18,5 @@ while (n<=0 or n >=100):
     
 
 for i in range (i+2,n, 1):
-    print("",i)
+    print("",i);
 

@@ -10,7 +10,7 @@ for i in range(0, 101, 1):
    
     sum=sum+i
    
-print("\nA soma dos numero de 1 a 100 e : ",sum)
+print("\nA soma dos numero de 1 a 100 e : ",sum); 
  
 
 

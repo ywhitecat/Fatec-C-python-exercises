@@ -16,37 +16,37 @@ consistir a resposta e encerrar o programa em caso negativo.
 int main()
 {
     int arraylimit;
-    char repete;
+    char loop;
     int conf;
     int position;
     int index;
 
-	printf ("Digite o numero de posicoes do vetor: \n");
+	printf ("Digite o numero de posicoes do vetor entre 1 e 20: \n");
 	scanf ("%i", &arraylimit);
 	while ((arraylimit<1) || (arraylimit>20))
 		{
-			printf ("\nInvalido! Insira um numero de posicoes positivo e menor ou igual a 20:\n");
-    		scanf ("%i", &arraylimit);
+		printf ("\nInvalido! somente de 1 a 20:\n");
+    	scanf ("%i", &arraylimit);
 		}
   
   	int numbers[arraylimit];
   	conf=0;
-  	repete='S';	//   ####GARANTE A PASSAGEM PELO PRIMEIRO CICLO!!!####
-  // Looping para popular o vetor
-  printf("\n\n Agora preencha as %i posicoes do vetor:\n", arraylimit);
+  	loop='S';	
+
+  printf("\n\n Agora preencha essas %i posicoes do vetor:\n", arraylimit);
   
-  for(int i=0; i<arraylimit; i++)
- 	 {
+for(int i=0; i<arraylimit; i++)
+ 	{
     scanf("%i", &numbers[i]);
-	 }
+ }
  	
-  // Looping para exibir os valores do vetor
+ 
   printf("\n\nOs numeros digitados foram:\n");
   for(int i=0; i<arraylimit; i++)
   {
       printf("%i; ", numbers[i]);
   }
-while (repete=='S') 
+while (loop=='S') 
 {
 	printf("\n\nEm qual indice se encontra o numero: ");
 	scanf ("%i", &index);
@@ -54,25 +54,25 @@ while (repete=='S')
   {
       if (numbers[i]==index)
       {
-      	position=i;    	//A contagem se inicia em 0!!!
+      	position=i;    
       	conf=1;
       	break;      	
 	  }
   }
   	if (conf==1)
   	{
-  		printf("\n\nO numero %d se encontra na posicao %i do vetor\n", index, position);
-		repete='N';
+  		printf("\n\nO numero %i se encontra na posicao %i do vetor\n", index, position);
+		loop='N';
 	}
 	else
 	{
-		printf("\n\nO numero %d nao se encontra no vetor!", index); 
+		printf("\n\nO numero %i nao encontrado no vetor!", index); 
 		printf("\n\nDeseja encontrar um outro valor? (S-Sim) (N-Nao)\n"); 
-		scanf ("%s", &repete);
-		while (repete!='S' && repete!='N')
+		scanf ("%s", &loop);
+		while (loop!='S' && loop!='N')
 		{
 			printf ("\nInvalido!\nDigite (S-Sim) (N-Nao): ");
-			scanf ("%s", &repete);	
+			scanf ("%s", &loop);	
 		}
 	}  
 }

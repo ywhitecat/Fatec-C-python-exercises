@@ -3,8 +3,8 @@ a=float(input("Digite primeiro valor: "))
 b=float(input("Digite o segundo valor: "))
 
 if (a>b):
-    print("O maior numero e ",a)
+    print("O maior numero e ",a);
 
 else:
-    print("O maior numero e ",b)
+    print("O maior numero e ",b);
 

@@ -18,6 +18,6 @@ for i in range(0 , 20, 1):
     b=a
     a=r
                 
-    print("",r)
+    print("",r);
         
     
